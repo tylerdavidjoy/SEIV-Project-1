@@ -45,3 +45,8 @@
   .white {
       color:white;
   }
+
+  .unordered-list {
+    text-align: left;
+    margin-left: 30%;
+  }
