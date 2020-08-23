@@ -1,7 +1,68 @@
 <!DOCTYPE html>
 <html>
-    <body>
-        <h1>How to preprepare to be a Computer Science Major</h1>
-        <p>Do a lot of CS stuff</p>
+    <head>
+        <link rel = "stylesheet" href="../main.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+        <meta charset="UTF-8">
+    </head>
+
+    <body class="background">
+
+        <div>
+            <!-- Sidebar -->
+            <div class="w3-sidebar w3-bar-block w3-border-right sidebar" style="display:none; background-color:#525252" id="mySidebar">
+                <button onclick="w3_close()" class="w3-bar-item w3-large white" style="background-color:#525252" >Close &times;</button>
+                <a href="index.html" class="w3-bar-item w3-button" style="color:white">Home</a>
+                <a href="why.html" class="w3-bar-item w3-button" style="color:white">Why to be a Computer Scientist</a>
+                <a href="experience.html" class="w3-bar-item w3-button" style="color:white">A day in the life</a>
+                <a href="career.html" class="w3-bar-item w3-button" style="color:white">Careers</a>
+                <a href="prepared.html" class="w3-bar-item w3-button" style="color:white">How to be prepared</a>
+                <a href="learnMore.html" class="w3-bar-item w3-button" style="color:white">Learn more</a>
+            </div>
+
+                
+
+                    <script>
+                        function w3_open() {
+                        document.getElementById("mySidebar").style.display = "block";
+                        }
+                        
+                        function w3_close() {
+                        document.getElementById("mySidebar").style.display = "none";
+                        }
+                        </script>
+
+                <button class="w3-button w3-xlarge" onclick="w3_open()" style="background-color:#525252; color:white">☰</button>
+            <!-- Sidebar End-->
+        </div>
+
+        <h1 class="heading center">A day in the life of a CS Major</h1>
+        <p class="white center">Do a lot of CS stuff</p>
+
+        <div class="center">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/pKO9UjSeLew" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+            <p class="white">Being a computer scientist mostly includes writing code, and fixing said code.
+                You will either be adding new features or bug fixing, most likely you will do both and switch between them regularly.
+                While bug fixing you will replicate the bug and try to find the source. This is where problem solving comes into play
+                in that the code base will be hundreads of thousands of lines of code if not millions. You have to be able to narrow down the files 
+                that the issue may be in.
+            </p>
+
+            <div class="center">
+                <img src="../imgs/lines.jpg" alt="Lines of code" style="width:120%;">
+            </div>
+
+            <p class="white">Other than programming, you will have daily meetings with your team to discus what you have been working on and any problems you may be encountering.
+                This serves to keep the team up to date on the status of the project, keep anyone from getting stuck, and propell the team forward by sharing your knowledge.
+                These meetings are kept short to force them to be efficent and not waste time to improve the project.</p>
+            
+            <p class="white">You might also assist in writing documentation or communicating with the customer and stakeholders about the status of the project and any new features they want.</p>
+
+            <div class="center">
+                <img src="../imgs/scrum.jpg" alt="scrum" style="width:120%;">
+            </div>
+        </div>
     </body>
 </html>
